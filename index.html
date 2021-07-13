@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
     <!-- favicon -->
     <link rel="shortcut icon" href="images/NSS-logo.png" type="image/x-icon" />
 
@@ -13,11 +14,12 @@
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
-    <!-- stylesheet-css -->
-
-    <link rel="stylesheet" href="css/flippingCard.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    
+     <!-- stylesheet-css -->
+     <link rel="stylesheet" href="css/styles.css" />
+     <link rel="stylesheet" href="css/flippingCard.css" />
+     <link rel="stylesheet" href="css/contact.css" />
+     
     <title>NSS-MMMUT</title>
 
     <style>
@@ -38,7 +40,11 @@
 
 <!-- body -->
 
-<body>
+<body onload="close_loader()">
+    <!-- preloader starts  -->
+    <div id="pre-loader">
+    </div>
+    <!-- preloader end  -->
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <img class="navbar-brand" src="images/NSS-logo.png" alt="nss-logo-png" width="55.4rem" height="60.4rem" />
@@ -270,6 +276,15 @@
       })
     </script>
     <!-- btn-to-top script ends-->
+
+    <!-- preloader script starts-->
+    <script>
+      function close_loader(){
+        document.getElementById('pre-loader').style.display='none';
+      }
+    </script>
+    <!-- preloader script end-->
+
     <footer id="footer">
       <div class="footer-top">
           <div class="grid-container">
