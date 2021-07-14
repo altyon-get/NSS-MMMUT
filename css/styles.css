@@ -68,7 +68,6 @@ from{
   display: flex;
 }
 .aboutus .box{
-  /* border: 2px solid black; */
   height: 100%;
   width: 100%;
 }
@@ -91,7 +90,7 @@ from{
   background: #000080;
   color: white;
   padding: 15px 0px;
-  font-size: 1rem;
+  font-size: 2rem;
 }
 #box2 .movingbody_{
   padding: 4px;
@@ -112,14 +111,19 @@ from{
     margin-top: 10px;
     width:100%; 
   }
-  .box2{
-    padding: 0 10%;
-  }
 }
 @media screen and (max-width: 650px) {
   #box2 .content_{
-    margin-top: 10px;
+    margin-top: 0;
     width:100%; 
+  }
+  .about__img>img{
+    width: 100px !important;
+    height: 100px !important;
+    margin-bottom: 10px;
+  }
+  #box1{
+    padding-bottom: 0px;
   }
 }
 /*  */
@@ -129,15 +133,12 @@ from{
 #logo1 {
     height: 80.156px;
     width: 80px;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin:20px 10px 10px 30px; 
 }
-
 #logo2 {
     height: 80.156px;
     width: 80px;
-    margin-right: 50px;
-    margin-top: 20px;
+    margin:20px 10px 10px 0px; 
 }
 
 #footer {
