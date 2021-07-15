@@ -36,6 +36,7 @@ section:nth-child(odd) {
   background-color: bisque;
 }
 .btn-to-top {
+  z-index: 99911;
   text-align: center;
   position: fixed;
   right: 10px;
